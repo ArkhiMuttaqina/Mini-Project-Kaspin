@@ -55,7 +55,8 @@ Route::post('/hapussupplier', 'App\Http\Controllers\supplierController@delete')
     ->name('hapussupplier');
 Route::post('/tambahsupplier', 'App\Http\Controllers\supplierController@tambahsupplier')
     ->name('tambahsupplier');
-
+    Route::get('/awtokomplet2', 'App\Http\Controllers\materialController@pilihsupplier')
+        ->name('bisakomplit2');
 
     //AUTH
     Route::get('/', 'App\Http\Controllers\loginsController@login')
@@ -75,6 +76,11 @@ Route::post('/tambahsupplier', 'App\Http\Controllers\supplierController@tambahsu
         ->name('profil');
     Route::post('/postupdateprofile', 'App\Http\Controllers\profilsayaController@update')
         ->name('updateprofile');
+
+    Route::get('/testdisplay', function () {
+        $x = app('firebase.firestore')->database()->collection('mini-log')->document('c41ba8ff752c4910a73c')->snapshot();
+       dd($x);
+    });
 
 
 
