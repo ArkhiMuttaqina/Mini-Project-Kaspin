@@ -271,7 +271,7 @@
                                                                 class="btn btn-icon btn-sm btn-primary"><i
                                                                     class="fas fa-edit"></i></a>
 
-                                                    @if ($hakakses == 4)
+                                                    @if ($hakakses == "Admin")
                                                       <a href="javascript:void(0)"
                                                                 onclick="hapus({{ json_encode($material) }});"
                                                                 class="btn btn-icon btn-sm btn-danger"><i

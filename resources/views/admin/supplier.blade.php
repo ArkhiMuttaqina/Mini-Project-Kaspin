@@ -112,7 +112,7 @@ $status = Session::get('status');
 <div class="main-content">
     <section class="section">
         <div class="section-header">
-            <h1>Admin</h1>
+            <h1>Admin </h1>
             <div class="section-header-breadcrumb">
                 <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
                 <div class="breadcrumb-item"><a href="#">Master Admin</a></div>
@@ -180,7 +180,7 @@ $status = Session::get('status');
                                                     onclick="ubah({{ json_encode($supplierku) }});"
                                                     class="btn btn-icon btn-sm btn-primary"><i
                                                         class="fas fa-edit"></i></a>
-                                                @if ($hakakses == 4)
+                                                @if ($hakakses == "Admin")
                                                     <a href="javascript:void(0)"
                                                         onclick="hapus({{ json_encode($supplierku) }});"
                                                         class="btn btn-icon btn-sm btn-danger"><i
