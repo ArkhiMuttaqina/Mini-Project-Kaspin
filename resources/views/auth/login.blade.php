@@ -45,7 +45,7 @@
                             </div>
                         @endif
                         <form method="post" action="{{ url('') }}/menjaditamu" id="sign_in_as_guest">
-                                    {{ csrf_field() }}
+                            {{ csrf_field() }}
                         </form>
                         <form action="{{ route('postlogin') }}" enctype="multipart/form-data" id="sign_in_as_user"
                             method="POST">
@@ -90,8 +90,9 @@
 
 
                         <div class="text-center mt-5 text-small">
-                            Copyright &copy; oke aja.
+                            Copyright &copy; Arkhi Muttaqina.
                             <div class="mt-2">
+                                <a href="{{ route('cvarkhi') }}" class="btn-sm btn-primary"> CV Arkhi Muttaqina </a>
                                 {{-- <a href="#">Hubungi Admin</a>
                                 <div class="bullet"></div>
                                 <a href="#">Hubungi Dev</a> --}}
