@@ -1,0 +1,38 @@
+{
+    "name": "hedii/laravel-date-range",
+    "description": "A date range trait with local scope methods for Laravel Eloquent models",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["hedii", "laravel-date-range", "laravel", "trait", "php"],
+    "authors": [
+        {
+            "name": "hedii",
+            "email": "hedi.chaibs@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "illuminate/database": "^8.12",
+        "illuminate/support": "^8.12",
+        "nesbot/carbon": "^2.31"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hedii\\LaravelDateRange\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Hedii\\LaravelDateRange\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    }
+}
